@@ -6,7 +6,7 @@ class StudentsController < ApplicationController
   end
 
   def show
-    Student.find(params[:id])
+    @student = Student.find(params[:id])
   end
 
   def activate
